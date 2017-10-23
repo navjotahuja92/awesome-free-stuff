@@ -6,7 +6,7 @@ var replacer = '<!--injectHere-->';
 var outputFile = 'README.md';
 const TEMPLATE_COLLECTION = `%m%* %NAME%
 %DATA% `;
-const TEMPLATE_ITEM = `%m%    * %NAME% %LINK%
+const TEMPLATE_ITEM = `%m%* %NAME% %LINK%
 `;
 var contents = utils.generateOutput(freeStuffData, TEMPLATE_COLLECTION, TEMPLATE_ITEM, '    ');
 var finalOutput = templateString.replace(replacer, contents);
